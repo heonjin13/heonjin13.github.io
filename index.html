@@ -373,18 +373,6 @@
       overflow-wrap: anywhere;
     }
 
-    .ai-usage {
-      padding: 2rem 0 0;
-      color: var(--text-muted);
-      font-size: 0.9rem;
-    }
-
-    .ai-usage p {
-      margin: 0;
-      padding-top: 1rem;
-      border-top: 1px solid var(--surface-strong);
-    }
-
     @media (max-width: 820px) {
       .nav-bar {
         flex-direction: column;
@@ -470,6 +458,7 @@
         <li><a href="#projects">Projects &amp; Activities</a></li>
         <li><a href="#courses">Future Courses</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#ai-usage">AI Usage</a></li>
       </ul>
     </nav>
   </header>
@@ -505,9 +494,11 @@
 
         <div class="content-stack">
           <div class="tile tile-accent">
-            <h3>Resume Document</h3>
-            <p>View or download the full CV as a PDF.</p>
-            <a class="button-link" href="assets/cv.pdf">Open CV PDF</a>
+            <h3>Experience</h3>
+            <ul class="tag-list" aria-label="Experience">
+              <li>Wordle auto-solver machine</li>
+              <li>Basic decimal stopwatch</li>
+            </ul>
           </div>
 
           <ul class="data-list" aria-label="Education and skills">
@@ -586,8 +577,16 @@
       </div>
     </section>
 
-    <section class="ai-usage" aria-label="AI usage disclosure">
-      <p>Tool: OpenAI Codex. Prompt used: Build a static personal website using Carbon design system...</p>
+    <section id="ai-usage" aria-labelledby="ai-usage-title">
+      <div class="section-grid">
+        <div class="section-label">
+          <h2 id="ai-usage-title">AI Usage</h2>
+        </div>
+
+        <div class="tile tile-accent">
+          <p>Tool: OpenAI Codex. Prompt used: Update the index.html file, specifically modifying the 'CV &amp; Resume' section. Completely remove the 'Open CV PDF' button and any links or text related to downloading a PDF document. Inside the 'CV &amp; Resume' section, add a new subsection called 'Experience'. Under the 'Experience' subsection, add the following two items: 'Wordle auto-solver machine' and 'Basic decimal stopwatch'. Keep the exact same Carbon Design System styling (flat geometry, sharp borders, etc.) and do not modify any other sections like 'About Me' or 'Projects'. Make sure the code is clean and properly formatted.</p>
+        </div>
+      </div>
     </section>
   </main>
 </body>
